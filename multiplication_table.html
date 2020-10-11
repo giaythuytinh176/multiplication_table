@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+    td {
+        width: 85px;
+        height: 25px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+</style>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 align="center"> This is a multiplication table</h1>
+
+<script>
+
+    let sout;
+    sout = '<table align="center" border="1px solid black" cellspacing="5" cellpadding="15">';
+
+    for (let i = 1; i < 10; i++) {
+        sout += '<tr>';
+        for (let j = 1; j < 10; j++) {
+            if (j == 1){
+                continue;
+            }
+            let cals = j * i;
+            let k = j.toString();
+            let m = i.toString();
+            sout += '<td>' + (k + ' x '+ m + ' = ' + cals) + '</td>';
+        }
+        sout += '</tr>';
+    }
+
+    sout += '</table>';
+    document.write(sout);
+
+</script>
+
+
+
+</body>
+</html>
